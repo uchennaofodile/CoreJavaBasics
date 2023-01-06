@@ -1,0 +1,16 @@
+package com.library;
+
+public class LibraryInterfaceDemo {
+
+	public static void main(String[] args) {
+		KidUsers kid = new KidUsers();
+		AdultUser adult = new AdultUser();
+		kid.setAge(10);
+		kid.registerAccount();
+		kid.setAge(18);
+		kid.registerAccount();
+		
+
+	}
+
+}
