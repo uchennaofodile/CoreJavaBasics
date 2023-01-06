@@ -19,7 +19,7 @@ class MyCalculator<N extends Number> {
 		return num1;
 	}
 
-	public <T extends Number> void setNum1(N num1) {
+	public void setNum1(N num1) {
 		this.num1 = num1;
 	}
 
@@ -27,7 +27,7 @@ class MyCalculator<N extends Number> {
 		return num2;
 	}
 
-	public <T extends Number> void setNum2(N num2) {
+	public void setNum2(N num2) {
 		this.num2 = num2;
 	}
 
