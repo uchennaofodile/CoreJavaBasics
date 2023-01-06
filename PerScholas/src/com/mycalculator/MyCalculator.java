@@ -1,8 +1,8 @@
 package com.mycalculator;
 
 class MyCalculator<N extends Number> {
-	N num1;
-	N num2;
+	private N num1;
+	private N num2;
 	Number result;
 
 	//---------Constructors---------
@@ -13,8 +13,25 @@ class MyCalculator<N extends Number> {
 
 	public MyCalculator() {}
 
-	//---------Methods---------
+	//--------Getters & Setters---------
 
+	public N getNum1(){
+		return num1;
+	}
+
+	public <T extends Number> void setNum1(N num1) {
+		this.num1 = num1;
+	}
+
+	public N getNum2() {
+		return num2;
+	}
+
+	public <T extends Number> void setNum2(N num2) {
+		this.num2 = num2;
+	}
+
+	//--------Methods---------
 	public Number add() {
 
 		if(num1 instanceof Integer && num2 instanceof Integer) {
@@ -36,7 +53,7 @@ class MyCalculator<N extends Number> {
 		return result;
 
 	}
-	
+
 	Number subtract() {
 		if(num1 instanceof Integer && num2 instanceof Integer) {
 			result=	num1.intValue()-num2.intValue();
@@ -66,21 +83,39 @@ class MyCalculator<N extends Number> {
 			result = num1.floatValue()*num2.floatValue();
 		}
 		return result;
-		
+
 	}
 
-	Number division() {
-			
-			try {
-				if(num1 instanceof Integer && num2 instanceof Integer)
-				
-				
-				
+	Number divide() {
+
+		if(num1 instanceof Integer && num2 instanceof Integer) {
+			if (num2.intValue() ==0) {
+				return 0;
 			}
-			catch(ArithmeticException e) {
-				System.out.println(0);
+			result = num1.intValue()/num2.intValue();
+		}
+		if(num1 instanceof Double && num2 instanceof Double) {
+			if (num2.doubleValue() ==0) {
+				return 0;
 			}
-			
+			result = num1.doubleValue()/num2.doubleValue();
+		}
+		if(num1 instanceof Float && num2 instanceof Float) {
+			if (num2.floatValue() ==0.0f) {
+				return 0;
+			}
+			result = num1.floatValue()/num2.floatValue();
+		}
+		if(num1 instanceof Short && num2 instanceof Short) {
+			if (num2.shortValue() ==0) {
+				return 0;
+			}
+			result = num1.shortValue()/num2.shortValue();
+		}
+		return result;		
+
+
+
 	}
 
 }

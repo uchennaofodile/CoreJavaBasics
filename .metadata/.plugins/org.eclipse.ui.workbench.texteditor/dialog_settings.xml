@@ -6,8 +6,12 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="myFloatCalc"/>
 		<list key="findhistory">
+			<item value="myCalc"/>
+			<item value="myDoubleCalc"/>
+			<item value=" myCalc"/>
+			<item value=" myCalc "/>
 			<item value="  %"/>
 			<item value=".equals"/>
 			<item value=".toUpperCase()"/>
@@ -15,6 +19,11 @@
 			<item value="x"/>
 		</list>
 		<list key="replacehistory">
+			<item value="myFloatCalc"/>
+			<item value="myShortCalc"/>
+			<item value="myDoubleCalc"/>
+			<item value=" myDoubleCalc"/>
+			<item value=" myDoubleCalc "/>
 			<item value="decFormat.format()"/>
 			<item value=".equalsIgnoreCase"/>
 			<item value=""/>
@@ -22,8 +31,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="309"/>
-		<item key="DIALOG_Y_ORIGIN" value="239"/>
+		<item key="DIALOG_X_ORIGIN" value="569"/>
+		<item key="DIALOG_Y_ORIGIN" value="298"/>
 		<item key="DIALOG_WIDTH" value="511"/>
 		<item key="DIALOG_HEIGHT" value="523"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
