@@ -1,5 +1,7 @@
 import java.io.IOException;
 import java.util.*;
+
+import com.perscholas.java_basics.Student;
 public class MyRunner {
 	public static void main(String[] args) throws IOException{
 		//	Human HMsg = () ->{
@@ -95,10 +97,42 @@ public class MyRunner {
 		//	System.out.println(resultString);
 		//	
 		MainEntry meObj = new MainEntry();
-		LinkedList<Integer> myIntArray =  meObj.calcObj.addNumsToIntArray();
-		meObj.calcObj.compute(myIntArray);
+		//LinkedList<Integer> myIntArray =  meObj.calcObj.addNumsToIntArray();
+	//	meObj.calcObj.compute(myIntArray);
 
 
-
+		List<String> names = new ArrayList<>();
+		names.add("Larry");
+		names.add("Tim");
+		names.add("John");
+		names.forEach(name -> { System.out.println(name);    }     );
+		
+	MyJoiner <Student>mj = (o1, o2)->{ return o1 + " and " + o2;
+	};
+	
+	MyJoiner<Student> mj2 = (o1,o2)->{
+		String and = " and ";
+		return o1 + and + o2;
+	};
+	
+	Student student1 = new Student(23, "Uc", 213L);
+	Student student2 = new Student(43, "Karen", 213L);
+	
+	String myStr = mj.concantenate(student1, student2);
+	String myStr2 = mj2.concantenate(student1, student2);
+	System.out.println(myStr);
+	System.out.println(myStr2);
+	mj.display(student1, student2);
+	
+	CheckNumber cn = new CheckNumber();
+	boolean isEven = cn.isEven.test(2);
+	boolean isOdd = cn.isOdd.test(15);
+	boolean isPrime = cn.isPrime.test(37);
+	boolean isPalindrome = cn.isPalindrome.test(32982038);
+	System.out.println("isEven: "+ isEven );
+	System.out.println("isOdd: "+ isOdd );
+	System.out.println("isPrime: "+ isPrime );
+	System.out.println("isPalindrome: "+ isPalindrome );
+	
 	}
 }

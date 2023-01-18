@@ -1,4 +1,4 @@
-package com.perscholas.java_basics;
+
 
 public class Student {
 
@@ -34,8 +34,8 @@ public void setAge(int age) {
 	this.age = age;
 }
 
-public String getName(String name ) {
-	return this.name = name;
+public String getName( ) {
+	return this.name;
 }
 
 public long getSocial() {
@@ -49,6 +49,11 @@ public void setSocial(long social) {
 public int happyBirthday() {
 	this.age = 1+ this.getAge();
 	return this.age;
+}
+
+@Override
+public String toString(){
+	return this.getName() +" "+ this.getAge()+" "+ this.getSocial();
 }
 
 	public static void main(String[] args) {
