@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="myFloatCalc"/>
+		<item key="selection" value="double"/>
 		<list key="findhistory">
+			<item value="int"/>
+			<item value="ArrayList"/>
 			<item value="myCalc"/>
 			<item value="myDoubleCalc"/>
 			<item value=" myCalc"/>
@@ -19,6 +21,8 @@
 			<item value="x"/>
 		</list>
 		<list key="replacehistory">
+			<item value="double"/>
+			<item value="LinkedList"/>
 			<item value="myFloatCalc"/>
 			<item value="myShortCalc"/>
 			<item value="myDoubleCalc"/>
@@ -31,7 +35,7 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="569"/>
+		<item key="DIALOG_X_ORIGIN" value="459"/>
 		<item key="DIALOG_Y_ORIGIN" value="298"/>
 		<item key="DIALOG_WIDTH" value="511"/>
 		<item key="DIALOG_HEIGHT" value="523"/>

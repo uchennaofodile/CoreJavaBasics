@@ -1,8 +1,0 @@
-package com.library;
-
-public interface LibraryUser {
-	int age;
-	String bookType;
-	void registerAccount();
-	void requestBook();
-}

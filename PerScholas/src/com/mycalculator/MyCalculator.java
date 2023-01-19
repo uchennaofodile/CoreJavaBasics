@@ -117,5 +117,15 @@ class MyCalculator<N extends Number> {
 
 
 	}
+	
+	public String toString() {
+		String output = "Number 1: " + num1+ " | Number 2: " + num2+ "\n";
+		output+= "Addition: " + add()+ "\n";
+		output+= "Subtraction: " + subtract()+ "\n";
+		output+= "Mulitplicaton: " + multiply()+ "\n";
+		output+= "Division: " + divide()+ "\n";
+		return output;
+	}
+	
 
 }
