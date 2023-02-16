@@ -6,11 +6,11 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="jakarta"/>
+		<item key="selection" value="persist"/>
 		<list key="findhistory">
+			<item value="save"/>
 			<item value="javax"/>
 			<item value="tit"/>
-			<item value="save"/>
 			<item value="department1_teacher"/>
 			<item value="Department"/>
 			<item value="tid"/>
@@ -25,9 +25,9 @@
 			<item value=".equals"/>
 		</list>
 		<list key="replacehistory">
+			<item value="persist"/>
 			<item value="jakarta"/>
 			<item value="tid"/>
-			<item value="persist"/>
 			<item value="Department1"/>
 			<item value="Teacher1"/>
 			<item value="double"/>

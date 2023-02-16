@@ -7,6 +7,9 @@ public class App
     {
      //TODO add named queries
         EmployeeController e = new EmployeeController();
-        e.createEmployeeTable();
+        //e.createEmployeeTable();
+        //e.findEmployeeByName();
+       // e.findEmployeeById();
+        e.ShowOfficeCodesAsDepartment();
     }
 }

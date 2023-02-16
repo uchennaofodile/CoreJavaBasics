@@ -55,10 +55,10 @@ public class findUser_Hql {
 	{
 	SessionFactory factory = new Configuration().configure().buildSessionFactory();
 	Session session = factory.openSession();
-	TypedQuery<Object[]> queryy = session.createQuery(
+	TypedQuery<Object[]> query = session.createQuery(
 	"SELECT U.salary, U.fullname FROM User AS U", Object[].class);
-	List<Object[]> resultss = queryy.getResultList();
-	for (Object[] a : resultss) {
+	List<Object[]> results = query.getResultList();
+	for (Object[] a : results) {
 	System.out.println("Salary: " + a[0] + ", City: " + a[1]);
 	}
 	}
