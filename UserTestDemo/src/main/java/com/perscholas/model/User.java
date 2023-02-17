@@ -1,5 +1,11 @@
 package com.perscholas.model;
 
+import java.io.Serializable;
+import java.util.Objects;
+
+import org.hibernate.annotations.NamedQueries;
+import org.hibernate.annotations.NamedQuery;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,9 +13,16 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
+//Practice NamedQueries - not used
+@NamedQueries({
+	@NamedQuery(name="find_By_Email", query="from User WHERE email = :email"),
+	@NamedQuery(name="find_Users_By_Zip", query= "from User WHERE zipcode = :zipcode")
+	
+})
+
 @Entity
 @Table(name="Users")
-public class User {
+public class User implements Serializable {
 	@Column(name="Id")
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,9 +36,8 @@ private String state;
 private String zipcode;
 
 
-public User(int userId, String email, String name, String password, String address, String state, String zipcode) {
+public User( String email, String name, String password, String address, String state, String zipcode) {
 	super();
-	this.userId = userId;
 	this.email = email;
 	this.name = name;
 	this.password = password;
@@ -80,9 +92,11 @@ public void setZipcode(String zipcode) {
 }
 @Override
 public String toString() {
-	return "User [userId=" + userId + ", email=" + email + ", name=" + name + ", password=" + password + ", address="
+	return /*"User [userId=" + userId +*/ "Email=" + email + ", name=" + name + ", password=" + password + ", address="
 			+ address + ", state=" + state + ", zipcode=" + zipcode + "]";
 }
+
+
 
 @Override
 public int hashCode() {
@@ -98,48 +112,26 @@ public int hashCode() {
 	return result;
 }
 
+
+
 @Override
-public boolean equals(Object obj) {
-	if (this == obj)
+public boolean equals(Object o) {
+	if (this.toString().equals(o.toString())) {
 		return true;
-	if (obj == null)
-		return false;
-	if (getClass() != obj.getClass())
-		return false;
-	User other = (User) obj;
-	if (address == null) {
-		if (other.address != null)
-			return false;
-	} else if (!address.equals(other.address))
-		return false;
-	if (email == null) {
-		if (other.email != null)
-			return false;
-	} else if (!email.equals(other.email))
-		return false;
-	if (name == null) {
-		if (other.name != null)
-			return false;
-	} else if (!name.equals(other.name))
-		return false;
-	if (password == null) {
-		if (other.password != null)
-			return false;
-	} else if (!password.equals(other.password))
-		return false;
-	if (state == null) {
-		if (other.state != null)
-			return false;
-	} else if (!state.equals(other.state))
-		return false;
-	if (userId != other.userId)
-		return false;
-	if (zipcode == null) {
-		if (other.zipcode != null)
-			return false;
-	} else if (!zipcode.equals(other.zipcode))
-		return false;
-	return true;
+	}
+	if (o instanceof User) {
+		User other = (User) o;
+		boolean sameId =(this.userId==other.getUserId());
+		boolean sameEmail=(this.email==other.getEmail());
+		boolean sameName=(this.name==other.getName());
+		boolean samePassword=(this.password==other.getPassword());
+		boolean sameAddress=(this.address==other.getAddress());
+		boolean sameState=(this.state==other.getState());
+		boolean sameZip=(this.zipcode==other.getZipcode());
+		if(sameId && sameEmail && sameName && samePassword && sameAddress && sameState && sameZip)
+			return true;
+	}
+	return false;
 }
 
 
