@@ -30,7 +30,7 @@ public class BookDaoImpl extends ConnectionDAO implements BookDao  {
            Connection connection = ConnectionDAO.getConnection();
            Statement stmt = connection.createStatement();
            ResultSet rs = stmt.executeQuery("SELECT * FROM books");
-           List booklist = new ArrayList();
+           List <Books>booklist = new ArrayList<>();
            while(rs.next())
            {
                Books b = new Books();

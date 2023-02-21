@@ -55,8 +55,9 @@ public class DemoJDBC {
 //			int affectedRows = mystmt.executeUpdate();
 //			
 //			System.out.println("UPDATE: " + affectedRows + " row(s) affected !!");
-			
-			
+			result.close();
+			stmt.close();
+			connection.close();
 		}
 		catch(SQLException e) {
 			e.printStackTrace();
