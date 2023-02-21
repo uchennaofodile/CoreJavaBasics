@@ -11,7 +11,6 @@
     <fullyQualifiedTypeName name="com.test.hib.model.User"/>
     <fullyQualifiedTypeName name="com.perscholas.model.Department"/>
     <fullyQualifiedTypeName name="com.perscholas.model.Teacher"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
     <fullyQualifiedTypeName name="com.test.hib.model.Department"/>
     <fullyQualifiedTypeName name="jakarta.persistence.TypedQuery"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -32,4 +31,10 @@
     <fullyQualifiedTypeName name="org.junit.jupiter.params.aggregator.ArgumentsAccessor"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.params.aggregator.ArgumentAccessException"/>
     <fullyQualifiedTypeName name="com.perscholas.model.User"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Table"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GeneratedValue"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Column"/>
 </qualifiedTypeNameHistroy>

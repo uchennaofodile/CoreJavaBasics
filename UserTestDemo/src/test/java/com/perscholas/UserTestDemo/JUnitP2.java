@@ -17,7 +17,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import com.perscholas.model.User;
 import com.perscholas.model.UserDAO;
 
-class JUnitParameterizedTest {
+class JUnitP2 {
 private static UserDAO userDAO=null;
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -36,10 +36,11 @@ private static UserDAO userDAO=null;
 	void tearDown() throws Exception {
 	}
 
+
 	@ParameterizedTest
 	@CsvSource({
-		"ew@gmail,Ezra Williams,password,123 ABC Lane,GA,30294",
-		"tony@stark.com,Tony Stark,IAmTheBest,Address1,NY,22222"
+		"uo1@gmail.com,Uchenna Ofodile, 123, 742 Evergreen Terrace, FL,78926",
+		"uo2@gmail.com,Mike,123,742 Evergreen Terrace,FL,78926"
 	})
 	void testGetUserById(ArgumentsAccessor arguments) throws ArgumentAccessException, SQLException {
 		System.out.println(this.toString());

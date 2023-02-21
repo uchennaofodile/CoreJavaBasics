@@ -13,6 +13,7 @@ import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 public class UserTest {
 	User user1;
@@ -21,7 +22,7 @@ public class UserTest {
 	UserDAO dao;
 	List<User> users = new ArrayList<User>();
 
-	@Before
+	@BeforeEach
 	public void setUp() throws Exception {
 		user1 = new User("uo1@gmail.com", "Uchenna Ofodile", "123", "742 Evergreen Terrace", "FL", "78926");
 		user2 = new User("uo2@gmail.com", "Mike", "123", "742 Evergreen Terrace", "FL", "78926");
@@ -33,9 +34,6 @@ public class UserTest {
 		dao = new UserDAO();
 	}
 
-	@After
-	public void tearDown() throws Exception {
-	}
 
 	@Test
 	public void testLogin() {
