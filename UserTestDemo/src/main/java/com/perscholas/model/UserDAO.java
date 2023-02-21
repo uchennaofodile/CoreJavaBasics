@@ -119,7 +119,8 @@ public List<User> findUsersByZip(String zipcode) {
 	Session session = factory.openSession();
 	String q = "FROM User WHERE zipcode = :zipcode";
 	//User user = new User();
-	Query query = session.createQuery(q, User.class);
+	
+	Query<User> query = session.createQuery(q, User.class);
 	query.setParameter("zipcode", zipcode);
 	List<User> users = query.getResultList();
 	for(User user: users) {

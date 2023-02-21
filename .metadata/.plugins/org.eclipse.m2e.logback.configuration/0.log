@@ -3275,3 +3275,11 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact com.h2databse
 2023-02-20 21:03:58,257 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2023-02-20 21:07:50,629 [Worker-75: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-02-20 21:07:50,631 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Uchenna Ofodile\eclipse-workspace\contact-manager-starter\src\main\resources
+2023-02-20 21:07:50,634 [Worker-75: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 21:07:50,635 [Worker-75: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-02-20 23:12:23,795 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-20 23:12:23,798 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Uchenna Ofodile\eclipse-workspace\UserTestDemo\src\main\resources
+2023-02-20 23:12:23,801 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-20 23:12:23,802 [Worker-87: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Uchenna Ofodile\eclipse-workspace\UserTestDemo\src\test\resources
+2023-02-20 23:18:42,722 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-02-20 23:18:42,722 [Worker-89: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Uchenna Ofodile\eclipse-workspace\UserTestDemo\src\main\resources
