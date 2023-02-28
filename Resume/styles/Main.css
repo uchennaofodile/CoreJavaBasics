@@ -17,6 +17,7 @@ justify-content:space-between;
 .title{color: #5197B5;}
 li{
     list-style-type: none;
+    
 }
 img{
 
@@ -35,24 +36,43 @@ img{
 /*.projects-employment-and-education{background-color: #282828}*/
 
 .section-header{background-color: #373737;
-padding: 0;
-margin: 0;
+padding: 0px;
+margin: 0px;
 margin-right:20px;
-border: 0;
+border: 0px; 
+position:relative;
+/* background-color: coral; */
+
 }
+
 
 .section-content{background-color: #282828;
-    padding: 0;
-    margin: 0;
+    padding: 0px;
+    margin: 0px;
     margin-right:20px;
-    border: 0;
+    border: 0px;
+  
 }
 
-.employment-subsection-header{
+.subsection-header{
 display: flex;
 justify-content: space-between;
 padding: 0;
 margin: 0;
 margin-right:20px;
-border: 0;}
+border: 0;
+/*background-color: cornflowerblue;*/
+}
+  
+.subsection.subtitle{
+    align-items: flex-end;
+}
+.square-icon{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    transform: translateX(-80%);
+} 
 
+h3{padding-left: 26px;}
+/* h5{background-color: blueviolet;} */
