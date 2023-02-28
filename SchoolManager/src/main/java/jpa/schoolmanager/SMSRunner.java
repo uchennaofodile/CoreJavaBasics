@@ -126,7 +126,12 @@ public class SMSRunner {
 			Course newCourse = courseService.GetCourseById(number).get(0);
 
 			if (newCourse != null) {
-				studentService.registerStudentToCourse(currentStudent.getsEmail(), newCourse);
+				boolean result = studentService.registerStudentToCourse(currentStudent.getsEmail(), newCourse);
+				
+			if(result==false) {
+					System.out.println("You are already registered in "+ newCourse.getcName() +". Please register for a new course.");
+					registerMenu();
+			}
 				Student temp = studentService.getStudentByEmail(currentStudent.getsEmail()).get(0);
 				
 				StudentCourseService scService = new StudentCourseService();

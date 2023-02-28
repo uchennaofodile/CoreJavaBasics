@@ -1,6 +1,5 @@
 package jpa.dao;
 
-import java.sql.SQLException;
 import java.util.List;
 
 import jpa.entitymodels.Course;
@@ -17,7 +16,6 @@ boolean validateStudent(String email, String password);
 
 boolean registerStudentToCourse(String email, Course course);
 
-//TODO change to email
 List<Course> getStudentCourses(String email);
 
 

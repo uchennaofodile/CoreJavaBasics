@@ -103,7 +103,7 @@ public class StudentDAOImpl implements StudentDAOInterface {
 	    List<StudentCourse> studentCourses = query.list();
 	    if (!studentCourses.isEmpty()) {
 	        // The student is already registered for the course
-	    	System.out.println("The student is already registed in: " + course);
+	    	//System.out.println("The student is already registed in: " + course.getName());
 	        transaction.rollback();
 	        session.close();
 	        factory.close();

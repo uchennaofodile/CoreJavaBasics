@@ -28,12 +28,17 @@ public class StudentService {
 		return courses;
 	}
 	//Registers a student to a given course
-	public void registerStudentToCourse(String getsEmail, Course newCourse) {
+//	public void registerStudentToCourse(String getsEmail, Course newCourse) {
+//		sd = new StudentDAOImpl();
+//		sd.registerStudentToCourse(getsEmail, newCourse);
+//
+//
+//	}
+	public boolean registerStudentToCourse(String getsEmail, Course newCourse) {
 		sd = new StudentDAOImpl();
-		sd.registerStudentToCourse(getsEmail, newCourse);
-
+	boolean result =	sd.registerStudentToCourse(getsEmail, newCourse);
+return result;
 
 	}
-
 
 }

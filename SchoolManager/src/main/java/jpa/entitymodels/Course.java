@@ -85,6 +85,11 @@ public boolean equals(Object obj) {
             Objects.equals(cInstructor, course.cInstructor);
 }
 
+public String getName() {
+	// TODO Auto-generated method stub
+	return null;
+}
+
 
 
 }
