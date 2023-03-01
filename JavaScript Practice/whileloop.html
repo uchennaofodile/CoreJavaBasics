@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loop</title>
+</head>
+<body>
+    <h1>While Loop</h1>
+    <script>
+        let balance =10000;
+        let year =0;
+        let target =20000;
+        const INTEREST =0.05;
+        while(balance<=target){
+            balance = (balance*INTEREST)+balance;
+            year++;
+        }
+        //console.log("It took "+year+" years to get to target "+ target)
+        console.log(`It took ${year} years to reach ${target} dollars.`);
+    </script>
+</body>
+</html>
