@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope Demo</title>
+</head>
+<body>
+    <h1>Scope Demo</h1>
+    <script>
+        var scope = "global"; //Declare global scope
+        function checkScope(){
+            var scope = "local";
+            return scope;
+        }
+    var result = checkScope();
+    console.log(result);
+        
+const scope1 ="global scope";
+function checkScope1(){
+            let scope1 = "local scope";
+            function nested(){
+                let scope1 ="nested scope";
+                return scope1;
+            }
+            return nested();
+        }
+    const result1 = checkScope1();
+    console.log(result1);
+
+    </script>
+
+</body>
+</html>

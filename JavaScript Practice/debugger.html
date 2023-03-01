@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html data-brackets-id='217'>
+
+<head data-brackets-id="218'>
+    <title data-brackets-id="220">Hoisting</title>
+</head>
+
+<body data-brackets-id='221'>
+    <script data-brackets-id='222'>
+        var url = /(\w+):\/\/([\w.]+)\/(\S*)/;
+        var text = "Visit my blog at http://www.example.com/~david"; 
+        var result = text.match(url);
+        if (result != null) {
+        }
+        var fullurl = result[0]; // Contains "http://www.example.com/~david
+        var protocol = result[1]; // Contains "http"
+        debugger;
+        var host = result[2]; // Contains "www.example.com"
+        var path = result[3]; // Contains "~david"
+        console.log("fullurl", fullurl)
+        console.log("protocol", protocol)
+        console.log("host", host)
+        console.log("path", path)
+    </script>
+</body>
+
+</html>

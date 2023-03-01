@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting</title>
+</head>
+
+<body>
+    <h1>Hoisting</h1>
+    <script>
+        //Function object and person object is hoiseted to the top of the scope
+        //even though the function is called before the function object is declared
+        //this is not a problem in javascript due to hoisting
+        // let person = {
+        //     first_name: "Uchenna",
+        //     last_name: "Ofodile",
+        //     age: 23
+        // }
+
+        // printProps(person);
+        // function printProps(p) {
+        //     for (const o in p) {
+        //         console.log(o + ":" + p[o] + "\n");
+        //     }
+        // }
+
+        //ReferenceError: can't access lexical declaration 'person' before initialization
+        function printProps(p) {
+            for (const o in p) {
+                console.log(o + ":" + p[o] + "\n");
+            }
+        }
+        printProps(person);
+        let person = {
+            first_name: "Uchenna",
+            last_name: "Ofodile",
+            age: 23
+        }
+
+
+
+    </script>
+</body>
+
+</html>

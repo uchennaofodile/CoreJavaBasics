@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var student = {firstName: "John",
+    lastName: "Smith", age: 30, class: "Java developer"
+};
+
+student.score = "90%"
+console.log(student.score);
+console.log(student.class);
+console.log(student);
+
+
+
+// let person ={
+
+//     firstName: "Ronaldinho",
+//     lastName: "Gaucho",
+//     id: 10,
+//     fullName: function(){
+//         return this.firstName + " " + this.lastName;
+//     }
+// };
+// console.log(person.fullName);
+
+
+let empty = {}; //An object with no properties
+
+let point  = {x:0, y:0};; //Two properties
+
+let point2 = {x: point.x, y: point.y+1} //More complex values
+
+let book = {
+"main title": "JavaScript",
+'sub-title': "The Definitive Guide",
+"for": "all audiences",
+author:{
+    firstName: "David",
+    surname: "Flanagan"
+}  
+}
+book.date = new Date("2000-03-15");
+const TITLE = book["main title"];
+console.log(TITLE);
+
+var o = new Object();//creates an empty object
+var a  = new Array();//creates an empty array
+var d = new Date();//creates a date object reprsenting the current time
+var r = new RegExp("js");//creates a RegExp object for pattern matching
+
+var myPerson = new Object();
+myPerson.firstName = "Bowen";
+myPerson.lastName ="Willis";
+myPerson.age = 34;
+myPerson.eyeColor = "brown";
+console.log(myPerson);
+
+
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+console.log(person.firstName + " is " + person.age + " years old.");
+console.log(person["firstName"] + " is " + person["age"] + " years old.");
+
+
+//Object constructors
+function Person(first, last, age, eyeColor){
+    this.firstName =first;
+    this.lastName =  last;
+    this.age = age;
+    this.eyeColor = eyeColor
+};
+Person.prototype.birthday = "15 June";
+var myFather =  new Person("John", "Doe", 50, "blue");
+
+var myMother = new Person("Jane", "Doe", 48, "brown");
+
+console.log("The DOB of my father is "+ myFather.birthday);
+
+
+const simpleObj = function(parameter){
+    this.city = parameter
+}
+
+const city1 = new simpleObj("Brooklyn");
+const city2 = new simpleObj("Bronx");
+
+simpleObj.prototype.state = "New York";
+console.log(city1);
+console.log(city2);
+console.log(city2.prototype === city1.prototype);
+console.log(city1.state);
+
+
+    </script>
+</body>
+</html>
