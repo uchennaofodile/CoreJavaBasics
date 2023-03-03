@@ -8,6 +8,10 @@ body{
     padding-top: 10px;
     margin-top: 10px;
     border: 0px;
+  
+}
+.main-container{
+    width: 100%;
 }
 
 /*----------------------------Header----------------------------*/
@@ -32,15 +36,18 @@ img{
 /*----------------------------Body----------------------------*/
 .body-section{display: flex;
     justify-content: space-between;
+ 
    
 }
 
-/*.projects-employment-and-education{background-color: #282828}*/
+.projects-employment-and-education{background-color: #282828;
+width:100%
+
+}
 
 .section-header{background-color: #373737;
 padding: 0px;
 margin: 0px;
-margin-right:20px;
 border: 0px; 
 position:relative;
 /* background-color: coral; */
@@ -51,18 +58,18 @@ position:relative;
 .section-content{background-color: #282828;
     padding: 0px;
     margin: 0px;
-    margin-right:20px;
     border: 0px;
+    width: 100%;
   
 }
 
 .subsection-header{
 display: flex;
 justify-content: space-between;
-padding: 0;
-margin: 0;
-margin-right:20px;
+padding: 0px;
+margin: 0px;
 border: 0;
+
 /*background-color: cornflowerblue;*/
 }
   
@@ -76,5 +83,28 @@ border: 0;
     transform: translateX(-80%);
 } 
 
-h3{padding-left: 26px;}
+h4{padding-left: 20px;}
 
+#circle-icon{
+    width: 20px;
+    /* position: relative; */
+    transform: translateY(4px) translateX(4px);
+    
+}
+.projects-employment-and-education{
+    width: 75%;
+}
+#program{
+    margin-left: 0px;;
+}
+#java {
+    background-color: gold;;
+    /* position: relative; */
+  }
+  /* #java::before {
+    content: "Java";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+   */

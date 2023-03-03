@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Chat Page</title>
+</head>
+
+<body>
+    <header>
+        <h1>Chat</h1>
+    </header>
+    <button id="enter-button">ENTER</button><br><br>
+
+    <!-- <label>User: </label><div><input  name="user-input" type="text" placeholder="Let's Talk...">
+    <br><br>
+    <textarea name="chat-box"></textarea>
+    </div> -->
+
+    <script>
+        const button = document.getElementById("enter-button");
+        let startChat = ()=>{
+             const label = document.createElement("label");
+             const userInput = document.createElement("input");
+             const chatBox = document.createElement("textarea");
+             label.innerText ="User: ";
+             document.getElementById("enter-button").parentNode.insertBefore(document.createElement("br"), button.nextSibling);
+            document.getElementById("enter-button").parentNode.insertBefore(label, button.nextSibling);
+            document.getElementById("enter-button").(userInput, button.nextSibling);
+            document.getElementById("enter-button").parentNode.insertBefore(chatBox, button.nextSibling);
+            button.style.display ="none";
+            }
+    
+        button.addEventListener("click", startChat);
+
+    </script>
+</body>
+
+</html>
