@@ -1,0 +1,28 @@
+<html> 
+ <head></head> 
+  <body> 
+  <input type="button" value="Which Browser?" id="btnBrowser">
+   <script> 
+   function whichBrowser(){
+     if (navigator.userAgent.indexOf("MSIE") != -1) {
+       alert("You are running Microsoft Internet Explorer."); }
+     else if (navigator.userAgent.indexOf("Firefox") != -1) {
+       alert("You are running FireFox."); }
+     else if (navigator.userAgent.indexOf("Navigator") != -1) {
+       alert("You are running Netscape."); }
+     else if (navigator.userAgent.indexOf("Opera") != -1 ) {
+       alert("You are running Opera."); }
+     else if (navigator.userAgent.indexOf("Chrome") != -1 ) {
+       alert("You are running Chrome."); }
+     else {
+       alert("You are running some odd-ball browser.");
+     }
+   }
+   function init(){  
+   var btnBrowser = document.getElementById("btnBrowser");
+     btnBrowser.onclick = whichBrowser;
+   }
+   window.onload = init;
+   </script> 
+  </body> 
+ </html>
