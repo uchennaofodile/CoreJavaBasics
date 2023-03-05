@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from './Components/Card'
 
-const alertMsg = 'Hello from Spain';
+const alertMsg = 'Hello World';
 
 
 // There are several reasons why it might be better to include the onAlert prop in App.js rather than in Card.jsx:
@@ -16,6 +16,7 @@ const alertMsg = 'Hello from Spain';
 
 //title and content are passed into props
  function App() {
+  //pass a function into the prop instead of the property itself
   function onAlert(){
     alert(alertMsg);
   }

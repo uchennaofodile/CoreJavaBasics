@@ -8,7 +8,7 @@ return(
 <div>
 <h1>{title}</h1>
 <p>{content}</p>
-<button onClick={onAlert}></button>
+<button onClick={onAlert}>Click Me</button>
 </div>
 
 
